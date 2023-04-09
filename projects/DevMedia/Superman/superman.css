@@ -1,0 +1,66 @@
+*
+{
+    text-align: justify;
+    font-size: large;
+    font-family: tahoma;
+    margin: 0;
+}
+
+.area
+{
+    margin: 10%;
+}
+
+.topo, .rodape
+{
+    background-color: blue;
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+.topo a
+{
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 30px;
+    padding: 0 10px;
+
+}
+
+.capa img
+{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.sinopse h1, .disponibilidade h1
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: arial black;
+}
+
+.disponibilidade img
+{
+    width: 100%
+}
+.galeria
+{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.galeria img
+{
+    width: 300px;
+    margin: 0 10px;
+    box-shadow: 10px 15px 5px 2px #101010;
+    box-sizing: border-box;
+}

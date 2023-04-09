@@ -1,0 +1,341 @@
+:root{
+    --color1:#774900;
+    --color2:#b88450;
+    --color3:#ffffff;
+    --color4: #000000;
+    --font1: Arial, sans-serif, Helvetica;
+}
+
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    text-align: center;
+    
+}
+
+div
+{
+    text-align: center;
+}
+.topo
+{
+    background-color: var(--color1);
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.topo img
+{
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+    left: 10%;
+}
+
+.topo .links
+{
+    position: absolute;
+    top: 5%;
+    right: 50px;
+    padding: 10px;
+}
+.links a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 3px 3px var(--color4);
+}
+
+.paralax
+{
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.baner
+{
+    background-image: url("img/parallax-imagem1.png");
+    background-attachment: fixed;
+}
+
+.baner h1
+{
+    color: var(--color3);
+    font-family:sans-serif;
+    font-size: 60px;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    opacity: 70%;
+}
+
+.info h2, .cafe h2, .conheca h2, .contato h2
+{
+    font-family:impact;
+    color: var(--color2);
+    padding: 20px;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.info p, .cafe p, .conheca p
+{
+    text-align: center;
+    margin: 0 10%;
+    font-size: large;
+    font-family: tahoma;
+    line-height: 40px;
+}
+
+.sobre
+{
+    background: url("img/parallax-imagem2.jpg");
+    background-attachment: fixed;
+}
+
+.sobre h3, .cafe-gourmet h3
+{
+    width: 500px;
+    background-color: var(--color1);
+    text-align: center;
+    color: var(--color3);
+    font-size: 30px;
+    font-family: comic;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    right: calc(100% / 3);
+}
+
+.cafe-gourmet
+{
+    background: url("img/parallax-imagem3.jpg");
+    background-attachment: fixed;
+}
+
+.box-contatos
+{
+    background-image: url("img/parallax-imagem4.png");
+    background-attachment: fixed;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.box-contatos iframe
+{
+    text-align: center;
+    margin: 0% 20%;
+}
+
+.dados
+{
+    
+    background-color: var(--color1);
+    margin: 0% 30%;
+    color: var(--color3);
+    width: 600px;
+}
+
+.dados a, .dados p
+{
+    margin-top: 40px;
+    color: var(--color3);
+    font-size: 20px;
+    font-family: Tahoma;
+    text-decoration: none;
+    display: block;
+    padding: 1%;
+}
+
+.horarios
+{
+    background-image: url("img/cafeteria.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 22%;
+    margin-bottom: 0;
+}
+.horarios h2
+{
+    color: var(--color3);
+    padding: 10px;
+}
+
+.semana
+{
+    display: inline;
+    color: var(--color3);
+    list-style: none;
+    font-family: tahoma;
+    font-size: 25px;
+    padding: 5%;
+}
+
+.horarios h2
+{
+    padding-top: 5%;
+}
+
+li
+{
+    position: relative;
+    padding: 2% 20%;
+    line-height: 80px;
+}
+
+li span
+{
+    font-family:impact;
+    color: var(--color2);
+    font-size: 25px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    text-align: center;
+    text-shadow: 3px 3px var(--color4);
+}
+
+li .linha
+{
+    margin: 3% 15%;
+    border-top: var(--color3) solid;
+    position: absolute;
+    left: 20%;
+
+}
+
+li h3, li p
+{
+    display: inline;
+}
+
+li h3
+{
+    position: absolute;
+    left: 20%;
+}
+
+li span, li p
+{
+    position: absolute;
+    right: 20%;
+}
+
+.final
+
+{
+    margin-bottom: 5%;
+}
+
+.rodape
+{
+    margin-bottom: 0;
+    width: 100%;
+    
+}
+
+.rodape2
+{
+    margin: 0;
+    background-color: var(--color4);
+    color: var(--color3);
+    line-height: 30px;
+    padding: 10px;
+
+}
+.rodape a
+{
+    bottom: 5%;
+    right: 2%;
+    position: fixed;
+}
+
+@media (max-width:720px){
+    *{
+        box-sizing: border-box;
+    }
+    .topo{
+        width: auto;
+        height:15%;
+    }
+    .topo img{
+        display: none;
+    }
+    .topo .links{
+        width: calc(75%);
+        line-height: 2rem;
+    }
+    .links a{
+        color: var(--color2);
+    }
+    .paralax{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .banner {
+        background-image: url("../Cafeteria/img/parallax-imagem1.png");
+    }
+    .paralax h1{
+        width: 60%;
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 4rem;
+    }
+    .sobre{
+        background-image: url("../Cafeteria/img/parallax-imagem2.jpg");
+    }
+    .paralax h3{
+        opacity: 75%;
+        width: 40%;
+    }
+    .box-contatos{
+        height: 100%;
+        width: auto;
+    }
+    .box-contatos iframe{
+        width: 50%;
+        height: 50%;
+    }
+    .contato .dados{
+        margin: 0;
+        max-width: 100%;
+        height: 30%;
+    }
+    .horarios{
+        margin: 0;
+        width: 100%;
+    }
+    .horarios li{
+        height: 10%;
+    }
+    li h3, li p, li span{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+    }
+    .rodape{
+        max-width: 100%;
+    }
+    .rodape img{
+        width: 50%;
+        height: 50%;
+    }
+}
