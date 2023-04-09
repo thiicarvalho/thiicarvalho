@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    background-color:yellow;
+    height: 400px;
+    flex-direction: row;
+    column-count: 2;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.flex-item{
+    color: #ccc;
+    font-size: 30px;
+    background-color: red;
+}
