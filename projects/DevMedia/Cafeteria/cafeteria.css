@@ -264,7 +264,7 @@ li span, li p
     position: fixed;
 }
 
-@media (max-width:720px){
+@media (max-width:450px){
     *{
         box-sizing: border-box;
     }
@@ -285,6 +285,7 @@ li span, li p
     .paralax{
         width: 100%;
         height: 100%;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -337,5 +338,9 @@ li span, li p
     .rodape img{
         width: 50%;
         height: 50%;
+    }
+    .rodape2 a{
+        width: 25%;
+        height: auto;
     }
 }
