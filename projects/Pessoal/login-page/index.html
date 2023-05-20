@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>
+                <figure>
+                    <img src="img/user.png" alt="usuario">
+                </figure>
+            </legend>
+            <section>
+                <form id="login" action="javascript.js" method="post">
+                    <label for="email1">Email</label>
+                    <input type="email" name="email1" id="email1" autocomplete="off" required placeholder="Digite seu e-mail...">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" required autocomplete="current-password" autocomplete="off" placeholder="Digite sua senha">
+                    <div class="checkbox">
+                        <input type="checkbox" name="lembrar" id="lembrar"><p>Lembrar de mim</p>
+                    </div>
+                    <input class="button" id="logbutton" type="submit" value="Entrar">
+                </form>
+                <span><strong>Nao possui conta? Cadastre-se</strong></span>
+                <div>
+                    <form action="javascript.js" method="post">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+    
+                        <label for="email2">Email</label>
+                        <input type="email" name="email2" id="email2" placeholder="Digite seu e-mail">
+                        <label for="nasc">Data de Nascimento</label>
+                        <input type="date" name="nasc" id="nasc">
+                        <label for="senha">Digite uma senha</label>
+                        <input type="password" name="senha" id="senha" minlength="8" maxlength="12" required placeholder="Digite uma senha">
+                        <label for="confsenha">Confirme sua senha</label>
+                        <input type="password" name="confsenha" id="confsenha" min="8" max="12" required  placeholder="Confirme sua senha">
+                        <div class="checkbox">
+                            <input type="checkbox" name="termos" id="termos" required><p>Li e aceito os termos.</p>
+                        </div>
+                        <input class="button" id="subsbuttom" type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </form>
+                </div>
+            </section>
+        </fieldset>
+</main>
+<script src="javascript.js"></script>
+</body>
+</html>

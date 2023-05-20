@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#cf0f6f, #551133) no-repeat;
+    display: grid;
+    place-items: center;
+    color: #aaa;
+    margin: 5% auto;
+    font: 1rem helvetica;
+}
+fieldset{
+    display: flex;
+    border: 1px #000 solid;
+    width: 60vw;
+    padding: 0 5%;
+    height: auto;
+}
+section, form{
+    margin: 15px auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 2px;
+}
+span{
+    margin: 15px 0;
+    text-align: center;
+}
+legend{
+    text-align: center;
+}
+figure img{
+    border-radius: 50%;
+}
+input{
+    margin: 1% 0;
+    padding: 1.5%;
+    background-color: #cee;
+    border: none;
+    border-radius: 1%;
+}
+
+section > div >form {
+    display: flex;
+    columns: 2;
+    margin-top: auto;
+}
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.button{
+    background: #65dc65e9;
+}
