@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>LFC Cloisons</title>
+        <meta name="description" content="LFC Cloisons">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LFC Cloisons</title>
+        <link rel="shortcut icon" href="img/iconlfc.ico">
+        <script>
+            function menuOnClick()
+            {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <picture>
+                    <figure id="logo">
+                        <img src="img/logolfc.jpg" alt="logo">
+                    </figure>
+                </picture>
+                <!-- Menu hamburguer -->
+                <menu>
+                    <div id="menu">
+                        <div id="menu-bar" onclick="menuOnClick()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <nav class="nav" id="nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="servicos.html">Services</a></li>
+                                <li><a href="sobre.html">A propos</a></li>
+                                <li><a href="contato.html">Contac</a></li>
+                            </ul>
+                        </nav>
+                </div>
+                </menu>
+            </nav>
+            <div class="menu-bg" id="menu-bg"></div>
+        </header>
+        <main>
+            <section class="secao banner paralax">
+                <span>LFC Cloisons</span>
+            </section>
+            <section class="presentation">
+                <span><strong>Nous sommes engagés à faire tous ce que concerne le projet pour qu'il soit dans les normes techniques, ainsi que vous acompagner dans toute la duréé du travaux.
+                </strong></span>
+            </section>
+            <section class="metiers">
+                <div><span>A propos</span>
+                </div>
+            </section>
+            <section class="secao nous" id="nous">
+                <p>LFC Cloisons est une entreprise spécialisée dans l'aménagement intérieur,avec une solide expérience dans l'aménagement de crèches et de plateaux de bureau, ainsi que dans la prise en charge de tous les corps d'état nécessaires à la réalisation de projets de construction ou de rénovation.
+                </p>
+            </section>
+
+            <section class="secao equipe" id="equipe">
+                <span>Notre équipe peut vous accueillir et vous reinsegner pour toutes les questions concernant votre projet de travaux.</span>
+            </section>
+
+            <section class="secao galerie" id="galerie">
+                <figure class="box">
+                    <img src="img/lmg1.jpg">
+                </figure>
+
+                <figure class="box">
+                    <img src="img/mermoz1.jpg">
+                </figure>
+
+                <figure class="box">
+                    <img src="img/mermoz2.jpg">
+                </figure>
+
+                <figure class="box">
+                    <img src="img/coloris.jpg">
+                </figure>
+
+                <figure class="box">
+                    <img src="img/ratp1.jpg">
+                </figure>
+
+                <figure class="box">
+                    <img src="img/ratp2.jpg">
+                </figure>
+
+                <figure class="box">
+                    <img src="img/boulangerie-abeille2.jpg">
+                </figure>
+            </section>
+        </main>
+        <section id="fournisseurs">
+            <aside>
+                <h3>Nos fournisseurs et clients:</h3>
+                <picture>
+                    <figure>
+                        <img src="./img/aside/averia.jpg" alt="Averia">
+                        <a href="https://www.tiaso.com/" target="_blank">
+                            <img src="./img/aside/tiaso.jpg" alt="Tiaso">
+                        </a>
+                        <a href="https://isathy.fr/" target="_blank">
+                            <img src="./img/aside/isathy.jpg" alt="Isathy">
+                        </a>
+                        <a href="https://bolminprofils.fr/" target="_blank">
+                            <img src="./img/aside/bolmin.png" alt="Bolmin">
+                        </a>
+                        <a href="https://litt.fr/" target="_blank">
+                            <img src="./img/aside/litt.png" alt="LITT">
+                        </a>
+                        <a href="https://pannex-s.fr/" target="_blank">
+                            <img src="./img/aside/pannex.png" alt="Pannex">
+                        </a>
+                        <a href="http://www.tivclim.fr/" target="_blank">
+                            <img src="./img/aside/tiv-logo.jpg" alt="T.I.V">
+                        </a>
+                        <a href="https://www.tollens.com/" target="_blank">
+                            <img src="./img/aside/tollens.png" alt="">
+                        </a>
+                        <a href="https://www.cbre.fr/" target="_blank">
+                            <img src="./img/aside/cbre.png" alt="C.B.R.E">
+                        </a>
+                        <a href="https://extensiadb.com/" target="_blank">
+                            <img src="./img/aside/extensia.jpg" alt="Extensia">
+                        </a>
+                        <a href="https://www.lespetits-explorateurs.com/" target="_blank">
+                            <img src="./img/aside/pe-logo.png" alt="Petits Explorateurs">
+                        </a>
+                        <a href="https://lesptitsboss.fr/" target="_blank">
+                            <img src="./img/aside/ptits-boss.jpg" alt="Ptits Boss">
+                        </a>
+                    </figure>
+                </picture>
+            </aside>
+        </section>
+        <footer class="rodape" id="contact">
+            <a href="mailto:contact@lfc-cloisons.fr">
+                <img src="img/message.gif" alt="e-mail">
+            </a>
+            <a href="tel:+33 0160233463">
+                <img src="img/phone.gif" alt="telephone">
+            </a>
+        </footer>
+    </body>
+</html>

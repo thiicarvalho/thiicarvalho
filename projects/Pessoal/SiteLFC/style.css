@@ -1,0 +1,337 @@
+:root{
+    --azule-escuro: #174866;
+    --cor-padrao: #236d9a;
+    --azul-claro: #7acbe5;
+    --azul-acinzentado: #5a8baa;
+}
+
+/*menu hamburguer*/
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--azule-escuro);
+    height: 2.5rem;
+  }
+  
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--azul-claro);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, var(--azul-acinzentado), var(--azul-acinzentado));
+    border-radius: 50%;
+    transition: 0.3s ease;
+    opacity: 50%;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
+
+/* Conteudo Principal */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(var(--azule-escuro),var(--cor-padrao));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1%;
+    padding: 2.5% 5%;
+    width: 99%;
+    display: flex;
+}
+figure#logo > img{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1% 5%;
+    width: 10rem;
+    height: auto;
+    opacity: 80%;
+}
+main{
+  width: 100%;
+  float: left;
+}
+.banner{
+    margin: auto;
+    background: url("img/devis.jpg") no-repeat center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 22rem;
+}
+.banner, .equipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner span, .metiers span, aside h3{
+    color: #fff;
+    font-family: tahoma;
+    text-align: center;
+    width: 100%;
+    opacity: 50%;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px black;
+}
+.lfc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+.presentation, .nous{
+    text-align: center;
+    margin: 5%;
+    font-size: 30px;
+    font-family: inherit;
+}
+.metiers{
+    margin: 10% 0;
+    background-image: url("img/projet.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.equipe{
+    height: 20rem;
+    width: 100%;
+    background-image: url("img/Bureau-etude.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+}
+.equipe span{
+    width: 60%;
+    text-align: center;
+}
+.galerie{
+    display: flex;
+    overflow-x: scroll;
+    margin: 7% 0;
+    width: 100%;
+    
+}
+.galerie img{
+    height: 15rem;
+    width: auto;
+    margin: 10px;
+}
+#fournisseurs {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+#fournisseurs aside{
+    height: auto;
+    width: 100%;
+    
+}
+#fournisseurs figure{
+    display: block;
+    object-fit: contain;
+}
+aside img{
+  margin: 30px;
+  height: auto;
+  width: 10%;
+  opacity: 70%;
+}
+section#fournisseurs div{
+  clear: both;
+  display: hidden;
+}
+footer{
+    display: flex;
+    background: var(--azule-escuro);
+    flex-direction: row;
+    margin: 0;
+    padding: 1%;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+footer a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+}
+footer img{
+    width: auto;
+}
+
+/*desktop*/
+
+@media screen and (max-width <= "480px") {
+    
+    
+    .banner span, .metiers span, aside h3{
+    color: #fff;
+    font-family: tahoma;
+    text-align: center;
+    width: 100%;
+    opacity: 50%;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px black;
+}
+    aside{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;   
+    }
+    aside h3{
+        display: hidden;
+    }
+footer{
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+    height: 20%;
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+}
+
+
+@media screen and (min-width > "480px") {
+
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 2.5% 5%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    footer a{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+
+@media screen and (min-width >= "600px") {
+  
+#fournisseurs {
+  float: right;
+  display: grid;
+  place-items: center;
+  width: 30%;
+  height: 100%;
+  padding: 5%;
+}
+
+aside img{
+  margin: 5%;
+  width: 20%;
+}
+}
+
