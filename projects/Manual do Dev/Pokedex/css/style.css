@@ -37,7 +37,7 @@ main{
     right: 27%;
     font-size: clamp(8px, 5vw,25px);
 }
-.pokemon__number{}
+
 .pokemon__name{
     color: #3a444d;
     text-transform: capitalize;
@@ -83,5 +83,3 @@ main{
     box-shadow: inset -4px 4px 0 #000;
     font-size: 0.9rem;
 }
-.btn-prev{}
-.btn-next{}
