@@ -114,6 +114,8 @@ header {
 }
 body{
     background: linear-gradient(var(--azule-escuro),var(--cor-padrao));
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
 }
 header{
     display: flex;
@@ -170,7 +172,7 @@ main{
     text-align: center;
     margin: 5%;
     font-size: 30px;
-    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .metiers{
     margin: 10% 0;
@@ -191,6 +193,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2rem;
+    color: var(--azule-escuro);
 }
 .equipe span{
     width: 60%;
