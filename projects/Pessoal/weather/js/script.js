@@ -23,7 +23,11 @@ async function searchCity (cityLocate) {
 
 function screenData(dados) {
     document.querySelector('.locate').innerHTML = dados.name
-    document.querySelector('.country').innerHTML = dados.sys.country
+    document.querySelector('.country').src = `https://www.countryflagicons.com/FLAT/48/${dados.sys.country}.png`
+    
+    
+    
+    //https://www.countryflagicons.com/FLAT/48/${dados.sys.country}.png`
     document.querySelector('.temp').innerHTML =  Math.floor(dados.main.temp) + ' °C'
     document.querySelector('.climTxt').innerHTML = dados.weather[0].description
     document.querySelector('.climImg').src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
