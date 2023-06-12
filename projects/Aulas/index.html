@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+<link rel="stylesheet" href="./css/style.css">
+
+    <title>Curso JS</title>
+</head>
+<body>
+    <header name="navbar" id="navbar">
+        <picture>
+            <figure>
+                <img src="../Aulas/img/JavaScript-logo.png" alt="Logo JavaScript">
+            </figure>
+        </picture>
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <legend>Precedencia de execuçao</legend>
+                <p>
+                    O JavaScript é uma linguagem usada principalmente para interaçao com os elementos HTML. O ideal é que a ligaçao para o arquivo JS seja feita somente no final do arquivo, visto que para que haja uma interaçao, é preciso que o elemento seja carregado na pagina.
+                </p>
+            </fieldset>
+        </section>
+            <section>
+                <fieldset>
+                    <legend>Variaveis</legend>
+                    <p>
+                        Variaveis sao espaços dentro da memoria do dispositivo que usamos para armazenar dados temporariamente. Essas variaveis podem ser de diversos tipos: strings (responsaveis pelo armazenamento de textos), numbers (responsaveis pelo armazenamento de numeros inteiros ou fracionarios), boolean (responsaveis pelo armazenamento de resultados "true" ou "false").<br>
+                        <strong>Para declarar uma variavel existem algumas regras a serem seguidas.</strong>
+                        <ul>
+                            <li>Nao podem ser iniciadas com numeros, apenas letras ou _</li>
+                            <li>Nao podem ser utilizados caracteres especiais como "ç", "^", "~"...</li>
+                            <li>Nao podem ser iguais as palavras usadas na linguagem, como "var", "let", "get", etc</li>
+                            <li>A linguagem diferencia maiusculas de minusculas, entao "curso" é diferente de "Curso", que por sua vez é diferente de "CURSO"</li>
+                        </u>
+                    </p>
+                    <p>
+                        Sao elementos que permitem o armazenamento de dados dentro da memoria do computador.
+                        Para os nomes dos identificadores, maiusculas e minusculas fazem diferença.<br>
+                        Variaveis devem conter nomes coerentes, ou seja, quando se tratar de salarios por exemplo, utilize o nome salario para a variavel.<br>
+                        Toda vez que o sinal de = aparecer no JS, ele significa "recebe".<br>Por exemplo: variavel1 = elemento1, ou seja variavel1 recebe elemento1.
+                    </p>
+                    <hr>
+                    <p>
+                        Ao declarar uma variavel, é recomendado usarmos o termo "var", visto que tanto para o JS quanto para quem vai trabalhar com o codigo, é mais facil interpretar que o termo var diz respeito à criaçao de uma variavel. Lembrando que nao devemos utilizar espaços no nome da variavel.
+                    </p>
+                </fieldset>
+            </section>
+        <section>
+            <fieldset>
+                <legend>Null e Undefined</legend>
+                <p>
+                    Null representa a ausencia intencional de um valor; ou seja a variavel sera declarada mas indicaremos que ela faz referencia a uma posiçao dentro do nosso codigo.
+                    <br>
+                    Ja undefined significa que a variavel nao possui valor inexistente ou nao atribuido. Uma variavel declarada sera undefined até o momento em que atribuimos um valor a ela.
+                </p>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+            <legend>Trabalhando com funçoes</legend>
+            <p>
+                Para trabalhar a localizaçao de tipos de dados usamos o <br><strong>.tolocaleString('localizaçao',{configuraçoes desejadas})</strong>. Por exemplo:<br> n1.tolocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) para retornar um valor monetario em real.
+            </p>
+        </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Operadores</legend>
+                <p>
+                    <br>Alguns exemplos sao os aritiméticos, operadores de atribuiçao, relacionais, logicos e ternarios.
+                    <br>Aprender a como trabalhar com operadores é necessario pois é com eles que vamos fazer calculos dentro da linguagem.
+                    <br>Operadores aritiméticos sao:<br>+ (soma),<br>-(subtraçao),<br>*(multiplicaçao),<br>/(divisao),<br>%(resto de divisao) e<br>**(potência). Sendo que o operador de % significa que é o resultado do resto de uma divisao inteira, quando é preciso inserir uma virgula nos paramos e levamo em conta o resto da divisao.
+                    <br>A ordem de precedencia é: <br>( )<br>**<br>*, / ou %<br> e por fim + e -.
+                    <br>Caso mais de um operador de precedencia apareça na mesma linha, iremos calcular da esquerda para a direita.
+                    <br>Operador de atribuiçao é quando você define o valor de uma variavel.
+                    <br>Operador de incremento: quando você precisa inserir um antecessor (-1) ou sucessor (+1), é possivel usar o operador de incremento. Ou seja, variavel++ ou variavel--. Por exemplo: n=n+1 pode ser substituido por n++ e n=n-1 pode ser substituido por n--.
+                </p>
+                <p>Operadores relacionais sao os sinais de:<strong> <(menor), >(maior), <=(menor ou igual), >=(maior ou igual), ==(igual), !=(diferente), ===(operédor de identidade, ou seja o tipo e o valor iserido) e !==(desigual)</strong>.
+                    <br><ins>O resultado desses operadores sera sempre um valor boalean (true ou false)</ins>
+                <br>Operadores logicos: !(negaçao), &&(conjunçao também conhecido como e) e ||(disjunçao, também conhecido como ou).<br>
+                A ordem de precedência dos operadores é: <strong>Aritiméticos > Relacionais > Logicos (na seguinte ordem: ! > && > ||)</strong>.
+            </p>
+            <p>Operador ternario: ? e : dentro da mesma expressao. Por exemplo: teste ? true : false</p>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend id="dom">
+                    DOM (Document Object Model)
+                </legend>
+                <p>
+                    Modelo para acesso aos objetos dentro do documento. E importante saber usar a arvore DOM. definindo quais sao os elementos pais e filhos.
+                    <br>Usado para acessar todos os elementos dentro do navegador, como por exemplo: tag, id, class, name e seletor.
+                    <br>Até o momento dessa aula o unico que funcionou é o <strong>'getElementsByTagName'</strong>, por este motivo vou usar o 'querySelector' sempre que possivel.
+                </p>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Condiçoes em JS</legend>
+                <p>Condiçoes é aplicar açoes que serao executadas de acordo com a interatividade do usuario fazendo com que o JS reaja de uma maneira ou de outra.
+                <h2>IF</h2>
+                <p>Condiçao simples, possui somente a condiçao <strong>true</strong>
+                <br>Condiçao composta possui os resultados <strong>true e false</strong></p>
+                <h2>Condiçoes Aninhadas</h2>
+                <p>Condiçoes que podem conter outras condiçoes dentro delas.
+                </p>
+                <h2>ELSEIF</h2>
+                <p>
+                    Representa qualquer valor que nao se enquadra no if e else.
+                </p>
+                <h2>Condiçoes Multiplas</h2>
+                <p>
+                    switch (Expressao){
+                        <br>case 1()
+                        <br><strong>break (obrogatorio)</strong>
+                        <br>case 2()
+                        <br><strong>break (obrogatorio)</strong>
+                        <br>etc...
+                    }<br>
+                    Usado para dados pontuais, ou seja para casos especificos. Funciona apenas com numeros inteiros e textos.
+                </p>
+            </fieldset>
+        </section>
+        
+    </main>
+
+
+
+
+    <!--JavaScript -->
+    <script src="javascript.js">
+    </script>
+</body>
+</html>

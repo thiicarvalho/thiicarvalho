@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: normal 1rem helvetica;
+    text-align: center;
+    width: 100%;
+}
+header{
+    background: #6d5454;
+    padding: 1%;
+}
+ul{
+    font: bold 1.5rem helvetica;
+    list-style: none;
+}
+li{
+    display: inline;
+    width: 10%;
+    margin: 1%;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+h1, p, fieldset, section, legend {
+    padding: 1%;
+    margin: 1%;
+}
+h1{
+    text-decoration: underline;
+    line-height: 3rem;
+}
+section{
+    display: grid;
+    place-items: center;
+    width: 90%;
+    text-align: justify;
+}
+p{
+    line-height: 2.5rem;
+    padding: 0 auto;
+}
+fieldset{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background: #000000;
+    border: 10px solid red;
+    color: #dad5d5;
+    line-height: 2rem;
+    width: 70%;
+}
+legend{
+    background: #fff;
+    color: #000;
+    text-align: center;
+    font: bold 1.5rem arial;
+}
+figure{
+    height: 100%;
+    width: 100%;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.variavel{color: #0cb809;}
+.name{color:#b21717}
+.valor{color: #debd3a;}

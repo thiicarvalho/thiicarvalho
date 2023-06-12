@@ -1,0 +1,45 @@
+:root{
+    --gold: #e4bb05;
+    --shadow: #9e8101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: normal 1.1rem Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 2rem;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+    background-color: #ecd827ec;
+}
+header img{
+    width: 10%;
+    height: 10%;
+}
+main{
+    margin: 5%;
+    padding: 3%;
+}
+fieldset{
+    margin: 5% 0;
+    padding: 3%;
+}
+fieldset li, fieldset h2{
+    list-style: none;
+    text-align: center;
+}
+legend{
+    font: bold 1.5rem Arial;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0 1rem;
+}
+hr{
+    margin: 10px 0;
+}
