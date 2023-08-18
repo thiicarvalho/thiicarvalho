@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://source.unsplash.com/1600x900/?landscape') no-repeat;
+    font-family: 'Open Sans', sans serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+main > form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    width: 100%;
+    min-width: 250px;
+    padding: 10px;
+    background: #cccccc85;
+    line-height: 2rem;
+    border-radius: 10px;
+}
+
+form > input {
+    border: none;
+    outline: none;
+    background: #e2e2e2bb;
+}
